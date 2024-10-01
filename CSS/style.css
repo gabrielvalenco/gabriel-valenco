@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
-/*
-font-family: "Poppins", system-ui;
-*/
-
 * {
     font-family: "Poppins", system-ui;
     font-size: 16px;
@@ -12,7 +8,8 @@ font-family: "Poppins", system-ui;
 body {
     background-color: #ffffff;
     color: rgb(0, 0, 0);
-    margin: auto;
+    margin: 0;
+    padding: 0;
     overflow-y: scroll;
 }
 
@@ -20,39 +17,26 @@ body::-webkit-scrollbar {
     display: none; /* Oculta a barra de rolagem */
 }
 
-main {
-    background-color: #ffffff;
-    box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.459);
-    border-radius: 20px;
-    color: rgb(0, 0, 0);
-    margin: auto;
-    padding: 15px;
-    max-width: 1500px;
-}
-
-main h1 {
-    font-size: 40px;
-    text-decoration: underline #0038FF;
-    text-underline-offset: 15px;
-}
-
 header {
+    background-color: #ffffff;
     text-align: center;
-    margin: 20px;
+    margin: 0; /* Remove margens para evitar espaço extra */
 }
 
 .highlight {
-    background-color: #0038FF;
+    background-color: #000000;
     color: white;
-    padding: 10px;
-    margin-bottom: 100px;
+    height: 100vh; /* Ocupa 100% da altura da tela */
     display: flex; /* Ativa o Flexbox */
     align-items: center; /* Alinha os itens verticalmente ao centro */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    padding: 10px; /* Adiciona espaçamento interno */
 }
 
 .highlight-content {
     flex: 1; /* O conteúdo ocupa 1 parte do espaço disponível */
     padding: 20px; /* Adiciona espaçamento interno */
+    max-width: 800px;
 }
 
 .highlight-image {
@@ -68,14 +52,20 @@ header {
     border-radius: 8px; /* Bordas arredondadas para a imagem */
 }
 
-article {
-    text-align: center;
+.highlight h1 {
+    font-size: 40px;
+}
+
+.highlight p {
+    font-weight: 500;
+    font-size: 20px;
 }
 
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 20px; /* Adicione padding lateral */
 }
 
 .logo h1 {
@@ -91,7 +81,7 @@ nav {
 }
 
 .logo span:hover {
-    color: #0038FF;
+    color: #059b44;
 }
 
 .nav-links {
@@ -119,7 +109,7 @@ nav {
     bottom: -3px;
     width: 0;
     height: 2px;
-    background-color: #0038FF;
+    background-color: #2eb065;
     transition: width 0.3s ease-in-out;
 }
 
@@ -128,23 +118,58 @@ nav {
 }
 
 .nav-links a:hover {
-    color: #0038FF;
+    color: #2eb065;
 }
 
-#sobre {
-    margin: 0px auto;
-    margin-bottom: 100px;
-    max-width: 600px;
+.cards {
+    height: 100vh; /* Ocupa 100% da altura da tela */
+    padding: 20px;
+    text-align: center;
+    background-image: url('https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover; /* Faz com que a imagem cubra toda a área */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Não repete a imagem */
+    color: white; /* Altera a cor do texto para branco para melhor contraste */
+    display: flex; /* Para alinhar conteúdo verticalmente */
+    flex-direction: column; /* Coloca os elementos em coluna */
+    justify-content: center; /* Centraliza verticalmente */
 }
 
-#habilidades {
-    margin: 0px auto;
-    margin-bottom: 100px;
-    max-width: 600px;
+.card-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
-#experiencias {
-    margin: 0px auto;
-    margin-bottom: 100px;
-    max-width: 600px;
+.card {
+    background-color: rgba(255, 255, 255, 0.9); /* Cor de fundo do cartão com transparência */
+    border: 1px solid #a1a1a1; /* Borda do cartão */
+    border-radius: 8px; /* Bordas arredondadas */
+    padding: 20px;
+    width: 200px; /* Largura do cartão */
+    transition: transform 0.3s; /* Transição ao passar o mouse */
+}
+
+.card:hover {
+    transform: scale(1.05); /* Aumenta levemente o cartão ao passar o mouse */
+}
+
+.cards h2 {
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+    margin: 5px 0 200px;
+}
+
+.card h3 {
+    margin: 0 0 10px; /* Margem do título */
+}
+
+.card a {
+    text-decoration: none; /* Remove o sublinhado do link */
+    color: #353535; /* Cor do texto do link */
+}
+
+.card p {
+    font-size: 14px; /* Tamanho da fonte da descrição */
+    color: #646464; /* Cor do texto da descrição */
 }
