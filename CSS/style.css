@@ -10,21 +10,62 @@ font-family: "Poppins", system-ui;
 }
 
 body {
-    background-color: rgb(255, 255, 255);
+    background-color: #ffffff;
     color: rgb(0, 0, 0);
+    margin: auto;
+    overflow-y: scroll;
+}
+
+body::-webkit-scrollbar {
+    display: none; /* Oculta a barra de rolagem */
 }
 
 main {
-    background-color: #0038FF;
-    color: white;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.459);
+    border-radius: 20px;
+    color: rgb(0, 0, 0);
     margin: auto;
     padding: 15px;
-    box-shadow: 0px 0px 2px 1px;
+    max-width: 1500px;
+}
+
+main h1 {
+    font-size: 40px;
+    text-decoration: underline #0038FF;
+    text-underline-offset: 15px;
 }
 
 header {
     text-align: center;
     margin: 20px;
+}
+
+.highlight {
+    background-color: #0038FF;
+    color: white;
+    padding: 10px;
+    margin-bottom: 100px;
+    display: flex; /* Ativa o Flexbox */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+}
+
+.highlight-content {
+    flex: 1; /* O conteúdo ocupa 1 parte do espaço disponível */
+    padding: 20px; /* Adiciona espaçamento interno */
+}
+
+.highlight-image {
+    flex: 1; /* A imagem ocupa 1 parte do espaço disponível */
+    display: flex; /* Ativa o Flexbox novamente */
+    justify-content: center; /* Centraliza a imagem horizontalmente */
+    align-items: center; /* Centraliza a imagem verticalmente */
+}
+
+.highlight-image img {
+    max-width: 80%; /* Limita a largura da imagem a 80% do contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 8px; /* Bordas arredondadas para a imagem */
 }
 
 article {
@@ -88,4 +129,22 @@ nav {
 
 .nav-links a:hover {
     color: #0038FF;
+}
+
+#sobre {
+    margin: 0px auto;
+    margin-bottom: 100px;
+    max-width: 600px;
+}
+
+#habilidades {
+    margin: 0px auto;
+    margin-bottom: 100px;
+    max-width: 600px;
+}
+
+#experiencias {
+    margin: 0px auto;
+    margin-bottom: 100px;
+    max-width: 600px;
 }
