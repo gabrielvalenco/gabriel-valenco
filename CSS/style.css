@@ -10,7 +10,7 @@ font-family: "Poppins", system-ui;
 }
 
 body {
-    background-color: rgb(255, 255, 255);
+    background-color: #ffffff;
     color: rgb(0, 0, 0);
     margin: auto;
     overflow-y: scroll;
@@ -22,9 +22,18 @@ body::-webkit-scrollbar {
 
 main {
     background-color: #ffffff;
+    box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.459);
+    border-radius: 20px;
     color: rgb(0, 0, 0);
     margin: auto;
     padding: 15px;
+    max-width: 1500px;
+}
+
+main h1 {
+    font-size: 40px;
+    text-decoration: underline #0038FF;
+    text-underline-offset: 15px;
 }
 
 header {
@@ -120,4 +129,22 @@ nav {
 
 .nav-links a:hover {
     color: #0038FF;
+}
+
+#sobre {
+    margin: 0px auto;
+    margin-bottom: 100px;
+    max-width: 600px;
+}
+
+#habilidades {
+    margin: 0px auto;
+    margin-bottom: 100px;
+    max-width: 600px;
+}
+
+#experiencias {
+    margin: 0px auto;
+    margin-bottom: 100px;
+    max-width: 600px;
 }
