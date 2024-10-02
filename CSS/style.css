@@ -163,6 +163,7 @@ a:hover {
     padding: 20px;
     width: 200px; /* Largura do cartão */
     transition: transform 0.3s; /* Transição ao passar o mouse */
+    margin-bottom: ;
 }
 
 .card:hover {
@@ -191,6 +192,7 @@ a:hover {
 
 
 /*---------------------------- pages ----------------------------*/
+
 
 /*---------------------------- abilities ----------------------------*/
 .abilities {
