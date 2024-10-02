@@ -75,19 +75,21 @@ nav {
     padding: 0 20px; /* Adicione padding lateral */
 }
 
-.logo h1 {
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+a h1 {
     font-size: 24px;
     align-items: center;
     display: flex;
-}
-
-.logo span {
     margin-left: 5px;
     transition: color 0.2s ease-in;
     cursor: pointer;
 }
 
-.logo span:hover {
+a:hover {
     color: #059b44;
 }
 
