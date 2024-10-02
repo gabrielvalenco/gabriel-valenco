@@ -35,7 +35,7 @@ header {
 .highlight {
     background-color: #000000;
     color: white;
-    height: 100vh; /* Ocupa 100% da altura da tela */
+    height: 105vh; /* Ocupa 100% da altura da tela */
     display: flex; /* Ativa o Flexbox */
     align-items: center; /* Alinha os itens verticalmente ao centro */
     justify-content: center; /* Centraliza o conteúdo horizontalmente */
@@ -137,56 +137,61 @@ a:hover {
 
 /*---------------------------- Cards ----------------------------*/
 .cards {
-    height: 100vh; /* Ocupa 100% da altura da tela */
+    min-height: 87vh; /* Garante que a seção ocupe no mínimo toda a altura da tela */
     padding: 20px;
     text-align: center;
     background-image: url('https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
-    background-size: cover; /* Faz com que a imagem cubra toda a área */
-    background-position: center; /* Centraliza a imagem */
-    background-repeat: no-repeat; /* Não repete a imagem */
-    color: white; /* Altera a cor do texto para branco para melhor contraste */
-    display: flex; /* Para alinhar conteúdo verticalmente */
-    flex-direction: column; /* Coloca os elementos em coluna */
-    justify-content: center; /* Centraliza verticalmente */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Alinha os cards horizontalmente ao centro */
 }
 
 .card-container {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    max-width: 1200px; /* Limita a largura total dos cards para não ocuparem toda a tela horizontalmente */
+    margin: 0 auto; /* Centraliza o container de cards */
 }
 
 .card {
-    background-color: rgba(255, 255, 255, 0.9); /* Cor de fundo do cartão com transparência */
-    border: 1px solid #a1a1a1; /* Borda do cartão */
-    border-radius: 8px; /* Bordas arredondadas */
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 1px solid #a1a1a1;
+    border-radius: 8px;
     padding: 20px;
-    width: 200px; /* Largura do cartão */
-    transition: transform 0.3s; /* Transição ao passar o mouse */
+    width: 200px;
+    margin: 50px; /* Espaçamento entre os cards */
+    transition: transform 0.3s ease;
 }
 
 .card:hover {
-    transform: scale(1.05); /* Aumenta levemente o cartão ao passar o mouse */
+    transform: scale(1.05);
 }
 
 .cards h2 {
-    font-size: 40px;
-    color: rgb(255, 255, 255);
-    margin: 5px 0 200px;
+    font-size: 50px;
+    color: #fff;
+    margin-bottom: 50px;
+    font-weight: bold;
 }
 
 .card h3 {
-    margin: 0 0 10px; /* Margem do título */
+    margin: 0 0 10px;
 }
 
 .card a {
-    text-decoration: none; /* Remove o sublinhado do link */
-    color: #353535; /* Cor do texto do link */
+    text-decoration: none;
+    color: #353535;
 }
 
 .card p {
-    font-size: 14px; /* Tamanho da fonte da descrição */
-    color: #646464; /* Cor do texto da descrição */
+    font-size: 14px;
+    color: #646464;
 }
 
 
