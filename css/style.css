@@ -316,10 +316,25 @@ a:hover {
     align-items: center; /* Centraliza verticalmente */
     justify-content: center; /* Centraliza horizontalmente */
     padding: 15px; /* Adiciona espaçamento interno */
+    gap: 20px;
 }
 
 .text-about p {
     text-align: left; /* Centraliza o texto do parágrafo */
+    font-size: 15px;
+}
+
+.about-image {
+    flex-shrink: 0; /* Impede que a imagem seja reduzida quando a tela diminuir */
+}
+
+img.profile {
+    max-width: 450px; /* Ajusta o tamanho da imagem */
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border: 8px solid #059b44;
 }
 
 
